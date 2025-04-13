@@ -67,10 +67,8 @@ def use_api(key, path_csv):
 
     csv_path = path_csv
     license_key = key
-    #"eKGvRYPC2yE_Jx4w0qTg1a**nSAcwXpxhQ0PC2lXxuDAZ-**"
 
     addresses = load_addresses(csv_path)[0:]
-    # Comment out above code to work
     success_list = []
     failure_list = []
 
