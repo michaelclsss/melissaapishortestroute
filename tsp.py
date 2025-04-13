@@ -66,10 +66,10 @@ def solve_tsp_with_start(distance_csv, start_id, selected_ids=None):
     print(result_df)
 
 def run_tcs():
-    # print("📍 Custom Start TSP Route Solver\n")
-    # user_file = input("Enter file of your csv with locations formatted as:(RecordID,Address,City,State,Zip): ")
-    # key = input("Enter Melissa API License key: ")
-    # use_api(key, user_file)
+    print("📍 Custom Start TSP Route Solver\n")
+    user_file = input("Enter file of your csv with locations formatted as:(RecordID,Address,City,State,Zip): ")
+    key = input("Enter Melissa API License key: ")
+    use_api(key, user_file)
     construct_matrix()
     start_point = input("Enter the starting RecordID: ").strip()
     raw_targets = input("Enter RecordIDs to visit (comma-separated), or leave blank to include all: ").strip()
