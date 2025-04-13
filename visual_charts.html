@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Data Visualizations</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body {
+      background-color: #1e1e2f;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #ffffff;
+    }
+    .chart-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .chart-box {
+      background: #2a2a3d;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+      width: 100%;
+      overflow-x: auto;
+    }
+    .chart-wrapper {
+      width: 2000px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  <h1>📊 Route Data Visualizations</h1>
+  <div class="chart-container">
+    <div class="chart-box">
+      <h3>Average Distance Distribution</h3>
+      <div class="chart-wrapper">
+        <canvas id="barChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    fetch("distance_matrix_km.csv")
+      .then(response => response.text())
+      .then(text => {
+        const lines = text.trim().split("\n");
+        const headers = lines[0].split(",").slice(1);
+        const matrix = lines.slice(1).map(row => row.split(",").slice(1).map(parseFloat));
+
+        const avgData = matrix.map(row => row.reduce((a,b) => a + b, 0) / row.length);
+
+        const sortedIndexes = avgData
+          .map((value, index) => ({ index, value }))
+          .sort((a, b) => b.value - a.value);
+
+        const top5Indexes = sortedIndexes.slice(0, 5).map(item => item.index);
+        const bottom5Indexes = sortedIndexes.slice(-5).map(item => item.index);
+
+        const backgroundColors = avgData.map((_, index) => {
+          if (top5Indexes.includes(index)) return 'rgba(255, 99, 132, 0.9)';
+          if (bottom5Indexes.includes(index)) return 'rgba(54, 162, 235, 0.9)';
+          return 'rgba(75, 192, 192, 0.7)';
+        });
+
+        new Chart(document.getElementById('barChart').getContext('2d'), {
+          type: 'bar',
+          data: {
+            labels: headers,
+            datasets: [{
+              label: 'Avg Distance (km)',
+              data: avgData,
+              backgroundColor: backgroundColors
+            }]
+          },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { labels: { color: 'white' } },
+              tooltip: { enabled: true }
+            },
+            scales: {
+              x: {
+                ticks: { color: 'white' },
+                title: {
+                  display: true,
+                  text: 'Location Record IDs',
+                  color: 'white',
+                  font: { size: 14 }
+                }
+              },
+              y: {
+                ticks: { color: 'white' },
+                title: {
+                  display: true,
+                  text: 'Average Distance (km)',
+                  color: 'white',
+                  font: { size: 14 }
+                }
+              }
+            }
+          }
+        });
+      });
+  </script>
+</body>
+</html>

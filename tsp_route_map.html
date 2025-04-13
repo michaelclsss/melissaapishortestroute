@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_42614716fc2c1b8ba006bb24c134961c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_42614716fc2c1b8ba006bb24c134961c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_42614716fc2c1b8ba006bb24c134961c = L.map(
+                "map_42614716fc2c1b8ba006bb24c134961c",
+                {
+                    center: [33.635299, -117.840373],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_787c4c15ffbcac0bcb0df2cd280e2040 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_787c4c15ffbcac0bcb0df2cd280e2040.addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var marker_28e42fa723591aa641b1af17327a2c9d = L.marker(
+                [33.635299, -117.840373],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_bd961f983c7b056a46f35c24cbc4fa65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22aa3232f81b4a9bf32f2bbaed689de8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7509c67728f9c56e425dbecf0c31fccd = $(`<div id="html_7509c67728f9c56e425dbecf0c31fccd" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 0</b><br>         <b>RecordID:</b> 5<br>         <b>Address:</b> 10 Whistler Ct, Irvine, CA 92617         </div>`)[0];
+                popup_22aa3232f81b4a9bf32f2bbaed689de8.setContent(html_7509c67728f9c56e425dbecf0c31fccd);
+            
+        
+
+        marker_28e42fa723591aa641b1af17327a2c9d.bindPopup(popup_22aa3232f81b4a9bf32f2bbaed689de8)
+        ;
+
+        
+    
+    
+                marker_28e42fa723591aa641b1af17327a2c9d.setIcon(icon_bd961f983c7b056a46f35c24cbc4fa65);
+            
+    
+            var marker_adb923b7f5c92c096c268e4c2050e395 = L.marker(
+                [33.634736, -117.840604],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_e159c4c1f2d0677e17d6569d11788419 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f5a24d891f5f39541c29ac149b6ef8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2b005a52bb3920ee5bea8c0035067d1d = $(`<div id="html_2b005a52bb3920ee5bea8c0035067d1d" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 1</b><br>         <b>RecordID:</b> 9<br>         <b>Address:</b> 26 McClintock Ct, Irvine, CA 92617         </div>`)[0];
+                popup_1f5a24d891f5f39541c29ac149b6ef8d.setContent(html_2b005a52bb3920ee5bea8c0035067d1d);
+            
+        
+
+        marker_adb923b7f5c92c096c268e4c2050e395.bindPopup(popup_1f5a24d891f5f39541c29ac149b6ef8d)
+        ;
+
+        
+    
+    
+                marker_adb923b7f5c92c096c268e4c2050e395.setIcon(icon_e159c4c1f2d0677e17d6569d11788419);
+            
+    
+            var marker_cd51df49aa704e030c20c9c09d988bc5 = L.marker(
+                [33.634868, -117.841251],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_178428215e672c61024466ee67a8bbd2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_196e85aee2710a481fd9949453f7e076 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c5833c88591b28f4d60142b4b76789dd = $(`<div id="html_c5833c88591b28f4d60142b4b76789dd" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 2</b><br>         <b>RecordID:</b> 3<br>         <b>Address:</b> 16 Joyce Ct, Irvine, CA 92617         </div>`)[0];
+                popup_196e85aee2710a481fd9949453f7e076.setContent(html_c5833c88591b28f4d60142b4b76789dd);
+            
+        
+
+        marker_cd51df49aa704e030c20c9c09d988bc5.bindPopup(popup_196e85aee2710a481fd9949453f7e076)
+        ;
+
+        
+    
+    
+                marker_cd51df49aa704e030c20c9c09d988bc5.setIcon(icon_178428215e672c61024466ee67a8bbd2);
+            
+    
+            var marker_ead0a1dc4a478cdb16bdcd37bfce50ba = L.marker(
+                [33.636319, -117.842609],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_5db878050846be1ae4cfd8f05872ee01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_08a130224e1c561c5db245e8e05b81b0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_14bb63d1af4ae57de039393016c73e94 = $(`<div id="html_14bb63d1af4ae57de039393016c73e94" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 3</b><br>         <b>RecordID:</b> 6<br>         <b>Address:</b> 25 Harvey Ct, Irvine, CA 92617         </div>`)[0];
+                popup_08a130224e1c561c5db245e8e05b81b0.setContent(html_14bb63d1af4ae57de039393016c73e94);
+            
+        
+
+        marker_ead0a1dc4a478cdb16bdcd37bfce50ba.bindPopup(popup_08a130224e1c561c5db245e8e05b81b0)
+        ;
+
+        
+    
+    
+                marker_ead0a1dc4a478cdb16bdcd37bfce50ba.setIcon(icon_5db878050846be1ae4cfd8f05872ee01);
+            
+    
+            var marker_c9842f454f6accbff261c392d49ec524 = L.marker(
+                [33.640275, -117.841219],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_c4d7da926355b1e03284262c73eba472 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa54a5ecb80c92a8004eabfcd832f90c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba8b70414e8ec2f1f8f8e0af22336e15 = $(`<div id="html_ba8b70414e8ec2f1f8f8e0af22336e15" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 4</b><br>         <b>RecordID:</b> 2<br>         <b>Address:</b> 4 Alcott Ct, Irvine, CA 92617         </div>`)[0];
+                popup_aa54a5ecb80c92a8004eabfcd832f90c.setContent(html_ba8b70414e8ec2f1f8f8e0af22336e15);
+            
+        
+
+        marker_c9842f454f6accbff261c392d49ec524.bindPopup(popup_aa54a5ecb80c92a8004eabfcd832f90c)
+        ;
+
+        
+    
+    
+                marker_c9842f454f6accbff261c392d49ec524.setIcon(icon_c4d7da926355b1e03284262c73eba472);
+            
+    
+            var marker_bff7ca69ca900275e7c65d3888c4a6ae = L.marker(
+                [33.642963, -117.836463],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_a8808d7288a7073aae54abd5e5c9fcf1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28c0a2e27a31ab9891a29e03d499eb45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b637159670620f10c291ba765152d38d = $(`<div id="html_b637159670620f10c291ba765152d38d" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 5</b><br>         <b>RecordID:</b> 1<br>         <b>Address:</b> 515 E Peltason Dr, Irvine, CA 92617         </div>`)[0];
+                popup_28c0a2e27a31ab9891a29e03d499eb45.setContent(html_b637159670620f10c291ba765152d38d);
+            
+        
+
+        marker_bff7ca69ca900275e7c65d3888c4a6ae.bindPopup(popup_28c0a2e27a31ab9891a29e03d499eb45)
+        ;
+
+        
+    
+    
+                marker_bff7ca69ca900275e7c65d3888c4a6ae.setIcon(icon_a8808d7288a7073aae54abd5e5c9fcf1);
+            
+    
+            var marker_1388e4cfb5fccb87ec6e9fa2e1800d65 = L.marker(
+                [33.64048, -117.834396],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_f2c2b02bc52f834f9ddf3fb3d0b65653 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6caaa5cb0511701ba6691c7cde3844ff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_22dd5390cf14ffcc39daafa2a01fe053 = $(`<div id="html_22dd5390cf14ffcc39daafa2a01fe053" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 6</b><br>         <b>RecordID:</b> 7<br>         <b>Address:</b> 18 Murasaki St, Irvine, CA 92617         </div>`)[0];
+                popup_6caaa5cb0511701ba6691c7cde3844ff.setContent(html_22dd5390cf14ffcc39daafa2a01fe053);
+            
+        
+
+        marker_1388e4cfb5fccb87ec6e9fa2e1800d65.bindPopup(popup_6caaa5cb0511701ba6691c7cde3844ff)
+        ;
+
+        
+    
+    
+                marker_1388e4cfb5fccb87ec6e9fa2e1800d65.setIcon(icon_f2c2b02bc52f834f9ddf3fb3d0b65653);
+            
+    
+            var marker_35af9ca6ba95fb9a921cd9b0709d0367 = L.marker(
+                [33.640608, -117.835352],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_455122b2bafab29e8c430a1f2c5e1701 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38319dec130e95fc6d3cfaad0b385410 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3248b0b3a67587eb65a4e388c95e0b00 = $(`<div id="html_3248b0b3a67587eb65a4e388c95e0b00" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 7</b><br>         <b>RecordID:</b> 4<br>         <b>Address:</b> 11 Murasaki St, Irvine, CA 92617         </div>`)[0];
+                popup_38319dec130e95fc6d3cfaad0b385410.setContent(html_3248b0b3a67587eb65a4e388c95e0b00);
+            
+        
+
+        marker_35af9ca6ba95fb9a921cd9b0709d0367.bindPopup(popup_38319dec130e95fc6d3cfaad0b385410)
+        ;
+
+        
+    
+    
+                marker_35af9ca6ba95fb9a921cd9b0709d0367.setIcon(icon_455122b2bafab29e8c430a1f2c5e1701);
+            
+    
+            var marker_5cc9ba8840936baeade245489a0e0a8c = L.marker(
+                [33.638972, -117.839477],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_e9ec432793cd16c8391e1f7b2a104fe1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_faf0a73f3047d874cc2110bc9cc8c8a4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d23da843daf277575ddd9a847a7a2d3b = $(`<div id="html_d23da843daf277575ddd9a847a7a2d3b" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 8</b><br>         <b>RecordID:</b> 8<br>         <b>Address:</b> 20 Newton Ct, Irvine, CA 92617         </div>`)[0];
+                popup_faf0a73f3047d874cc2110bc9cc8c8a4.setContent(html_d23da843daf277575ddd9a847a7a2d3b);
+            
+        
+
+        marker_5cc9ba8840936baeade245489a0e0a8c.bindPopup(popup_faf0a73f3047d874cc2110bc9cc8c8a4)
+        ;
+
+        
+    
+    
+                marker_5cc9ba8840936baeade245489a0e0a8c.setIcon(icon_e9ec432793cd16c8391e1f7b2a104fe1);
+            
+    
+            var marker_6a02b10da895e53f939f6e1de4a0e3cd = L.marker(
+                [33.635299, -117.840373],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var icon_98c05f08c2bb3757e4bd9f5e48ce68ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4d5a11cd8b1f9069f428078b30881bd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_057754e6d7db6cded0dcdb9f55d83223 = $(`<div id="html_057754e6d7db6cded0dcdb9f55d83223" style="width: 100.0%; height: 100.0%;">         <b>📍 Step 9</b><br>         <b>RecordID:</b> 5<br>         <b>Address:</b> 10 Whistler Ct, Irvine, CA 92617         </div>`)[0];
+                popup_e4d5a11cd8b1f9069f428078b30881bd.setContent(html_057754e6d7db6cded0dcdb9f55d83223);
+            
+        
+
+        marker_6a02b10da895e53f939f6e1de4a0e3cd.bindPopup(popup_e4d5a11cd8b1f9069f428078b30881bd)
+        ;
+
+        
+    
+    
+                marker_6a02b10da895e53f939f6e1de4a0e3cd.setIcon(icon_98c05f08c2bb3757e4bd9f5e48ce68ca);
+            
+    
+            var poly_line_80cf658a042680d518fe1e8824a8104c = L.polyline(
+                [[33.635299, -117.840373], [33.634736, -117.840604], [33.634868, -117.841251], [33.636319, -117.842609], [33.640275, -117.841219], [33.642963, -117.836463], [33.64048, -117.834396], [33.640608, -117.835352], [33.638972, -117.839477], [33.635299, -117.840373]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            poly_line_80cf658a042680d518fe1e8824a8104c.bindTooltip(
+                `<div>
+                     Route (2.59 km)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eedc35c02753f9d070124c1d59b98903 = L.marker(
+                [33.635299, -117.840373],
+                {
+}
+            ).addTo(map_42614716fc2c1b8ba006bb24c134961c);
+        
+    
+            var div_icon_3969393c75c2d8127b06a0197cb7875c = L.divIcon({
+  "html": "\n            \u003cdiv style=\"\n                display: inline-block;\n                font-size: 13px;\n                font-weight: normal;\n                color: #222;\n                background-color: rgba(255, 255, 255, 0.95);\n                padding: 8px 14px;\n                border-radius: 8px;\n                box-shadow: 0 2px 6px rgba(0,0,0,0.2);\n                white-space: nowrap;\n                margin-top: -10px;\n                margin-left: 10px;\n            \"\u003e\n            \u003cspan style=\"font-size: 15px;\"\u003e\ud83d\udea9\u003c/span\u003e \u003cb\u003eRoute\u003c/b\u003e\u003cbr\u003e\n            Total Distance: \u003cb\u003e2.59 km\u003c/b\u003e\n            \u003c/div\u003e\n        ",
+  "className": "empty",
+});
+            marker_eedc35c02753f9d070124c1d59b98903.setIcon(div_icon_3969393c75c2d8127b06a0197cb7875c);
+        
+    
+                marker_eedc35c02753f9d070124c1d59b98903.setIcon(div_icon_3969393c75c2d8127b06a0197cb7875c);
+            
+</script>
+</html>
