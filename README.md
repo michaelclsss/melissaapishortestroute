@@ -1,4 +1,4 @@
-Shortest distance using Melissa API and distance matrix
+This project solves a real-world Traveling Salesman Problem (TSP) using real address data around UC Irvine, aiming to compute the shortest walking route through selected locations and return to the origin. The solution combines address geocoding, customizable routing, and interactive map visualization, and proposes real-world use cases like delivery planning, event logistics, and student navigation.
 
 Check ouy our devpost for a video demo and project inspirations!
 https://devpost.com/software/traveling-student-problem?ref_content=contribution-prompt&ref_feature=engagement&ref_medium=email&utm_campaign=contribution-prompt&utm_content=contribution_reminder&utm_medium=email&utm_source=transactional#app-team
